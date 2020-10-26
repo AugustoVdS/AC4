@@ -18,7 +18,7 @@ def fibonacci():
         found=found+1
         resposta+= str(proximo) + ", "
 
-        return resposta
+    return resposta
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
