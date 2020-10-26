@@ -6,18 +6,17 @@ app = Flask(__name__)
 
 @app.route('/')
 def fibonacci():
-   proximo = 1
-   anterior = 0
-   limite = 50
-   found = 0
-   resposta = "0,"
-   while (found < limite):
-       tmp = proximo
-       proximo = proximo + anterior
-       anterior = tmp
-       found=found+1
-       resposta+= str(proximo) + ","
-
+proximo = 1
+anterior = 0
+limite = 48
+found = 0
+resposta = "0, 1, "
+while (found < limite):
+    tmp = proximo
+    proximo = proximo + anterior
+    anterior = tmp
+    found=found+1
+    resposta+= str(proximo) + ", "
 
    return resposta
 
